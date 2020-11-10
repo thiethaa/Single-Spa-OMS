@@ -1,0 +1,15 @@
+.refreshBtnBox{
+    border-top:1px solid grey;
+    background: rgb(212, 228, 212);
+    height:50px;
+}
+.refreshBtn{
+    margin:6px;
+    width:110px
+}
+.inputSFBox{
+    box-shadow:2px 2px 0 0 rgb(222,226,230);
+}
+.inputSF2Box{
+    border:none;
+}

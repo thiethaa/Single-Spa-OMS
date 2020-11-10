@@ -1,0 +1,18 @@
+.searchTitle{
+    padding-top:10px;
+    padding-left: 10px;
+    font-weight: bold;
+    background: rgb(240, 241, 243);
+    height: 40px;
+}
+.searchInput{
+    margin:2%;
+    max-width: 500px;
+    min-width: 200px;
+}
+.searchBtn{
+    margin-left: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:150px;
+}

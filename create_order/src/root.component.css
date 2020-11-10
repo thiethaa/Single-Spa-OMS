@@ -1,0 +1,41 @@
+.boxContainer{
+  margin-top: 8%;
+  margin-right: 20px;
+  margin-left:20px;
+  border:1px solid rgb(222,226,230);
+  box-shadow:2px 2px 0 0 rgb(222,226,230);
+}
+.containerStyle {
+    margin-top: 5%;
+    margin-left:15px;
+    margin-bottom: 5%;
+    max-width: 800px;
+    min-width: 300px;
+    border: 1px solid rgb(212, 206, 206);
+    padding: 35px;
+    width: 100%;
+    background: white;
+  }
+  .shippingCol{
+    margin-right:20px;
+  }
+  .summaryCol{
+    background:white;
+  }
+  .colStyle{
+    background:white;
+  }
+  .titleShip{
+    padding-top:20px;
+    margin-bottom: 0;
+  }
+  .feedBack{
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .titleShip2{
+    margin-top:30px;
+    margin-bottom:30px;
+    color:rgb(102,102,102);
+  }

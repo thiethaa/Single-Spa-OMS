@@ -1,0 +1,17 @@
+.headcls{
+    text-align: center;
+    margin-left:5%;
+}
+.headclsTitle{
+    font-family: Times, "Times New Roman", serif;
+}
+.headclsTitleSpan{
+    font-family: Times, "Times New Roman", serif;
+    font-size: 40px;
+    border-bottom:1px solid;
+}
+.headclsp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    font-size: 12px;
+}

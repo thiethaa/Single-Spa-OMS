@@ -1,0 +1,24 @@
+  .boxLogin{
+    top:0;
+    position: fixed;
+    width:100%;
+    z-index:100;
+  }
+  .CardLogin{
+    margin-top:8%;
+    left:50%;
+    transform: translate(-50%);
+    width: 450px;
+  }
+  .brand{
+    color:white;
+    border-right:1px solid white;
+    padding-right:10px;
+   } 
+   .title{
+     color:white;
+     padding-top:5px;
+   }
+  .loginBtn{
+    float: right;
+  }

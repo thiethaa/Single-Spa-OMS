@@ -1,0 +1,17 @@
+.titleStyle {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 18px;
+  }
+  .titleStyle2 {
+    margin-left: 18px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .fontStyle {
+    font-size: 10px;
+  }
+  .img{
+    margin-left: 10px;
+    width:30px;
+  }

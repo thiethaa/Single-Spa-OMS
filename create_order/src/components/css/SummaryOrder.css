@@ -1,0 +1,15 @@
+.summaryBox{
+    /* background:rgb(250,250,250); */
+    padding:10px;
+    width:600px;
+  }
+  .summaryHeader{
+    background: transparent;
+  }
+  .cardStyle {
+      margin-top: 11%;
+      margin-left: 15px;
+      width: 320px;
+      height: 880px;
+    }
+  

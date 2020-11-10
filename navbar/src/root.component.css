@@ -1,0 +1,68 @@
+ .navbarBox{
+  top:0;
+  position: fixed;
+  width:100%;
+  z-index:100;
+ }
+ 
+ .Nav1{
+    height: 50px;
+ }
+ .Nav2{
+   background: rgb(247, 245, 245);
+   height: 40px;
+ }
+
+ .Nav2:hover{
+  background: white;
+ }
+ .brand{
+  color:white;
+  border-right:1px solid white;
+  padding-right:10px;
+ } 
+ .title{
+   color:white;
+   padding-top:5px;
+ }
+ .app1,.app2{
+  color:white;
+  padding-left:10px;
+ }
+ .app1:hover,.app2:hover{
+  color:grey;
+  text-decoration: none;
+ }
+
+ .link1st{
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  padding-left: 25px;
+  padding-right:25px;
+  /* border-top: none; */
+  border-left:none;
+  border-right:1px solid rgb(179, 175, 175);
+  border-bottom:1px solid rgb(179, 175, 175);
+  border-radius: 0 0 2% 2%;
+ }
+.link{
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right:25px;
+    /* border-top: none; */
+    border-right:1px solid rgb(179, 175, 175);
+    border-left:1px solid rgb(179, 175, 175);
+    border-bottom:1px solid rgb(179, 175, 175);
+    border-radius: 0 0 2% 2%;
+  }
+  
+  .link:hover,.link1st:hover,
+  .link:focus,.link1st:focus {
+    background: rgb(255, 251, 251);
+    color: green;
+    text-decoration: none;
+    border-bottom: none;
+  }

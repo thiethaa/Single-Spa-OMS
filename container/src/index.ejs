@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CCUI-Single-Spa</title>
+  <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.5/runtime.min.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+  <meta name="importmap-type" content="systemjs-importmap" />
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.5/lib/system/single-spa.min.js",
+        "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/5.5.0/system/single-spa.min.js",
+        "single-spa-layout": "https://unpkg.com/single-spa-layout@1.0.0-beta.2/dist/system/single-spa-layout.min.js",
+        "react": "https://unpkg.com/react@16/umd/react.production.min.js",
+        "react-dom": "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js",
+        "react-router-dom": "https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"
+      }
+    }
+  </script>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.5.5/lib/system/single-spa.min.js" as="script">
+  <script src="https://unpkg.com/zone.js@0.10.3/dist/zone.js"></script>
+
+  <% if (isLocal) { %>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@wsgc/root-config": "//localhost:9000/wsgc-root-config.js",
+        "@wsgc/Navbar":"//localhost:9001/wsgc-Navbar.js",
+        "@wsgc/CreateOrder":"//localhost:8080/wsgc-CreateOrder.js",
+        "@wsgc/Orders":"//localhost:8081/wsgc-Orders.js",
+        "@wsgc/Store":"//localhost:8082/wsgc-Store.js",
+        "@wsgc/items":"//localhost:8083/wsgc-items.js",
+        "@wsgc/rewards":"//localhost:8084/wsgc-rewards.js",
+        "@wsgc/admin":"//localhost:8085/wsgc-admin.js",
+        "@wsgc/concierge":"//localhost:8086/wsgc-concierge.js",
+        "@wsgc/omni":"//localhost:8087/wsgc-omni.js",
+        "@wsgc/mass-upload":"//localhost:8088/wsgc-mass-upload.js",
+        "@wsgc/shipment":"//localhost:8089/wsgc-shipment.js",
+        "@wsgc/login":"//localhost:8090/wsgc-login.js",
+       
+
+        "angular": "http://localhost:2020/main.js"
+      }
+    }
+  </script>
+  <% } %>
+
+  <% if (isLocal) { %>
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@1.16.0/dist/import-map-overrides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.4.0/dist/system.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.4.0/dist/extras/amd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.4.0/dist/extras/named-exports.js"></script>
+  <% } else { %>
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@1.16.0/dist/import-map-overrides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.4.0/dist/system.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.4.0/dist/extras/amd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.4.0/dist/extras/named-exports.min.js"></script>
+  <% } %>
+</head>
+<body>
+  <main></main>
+  <script>
+    System.import('@wsgc/root-config');
+  </script>
+  <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+</body>
+</html>

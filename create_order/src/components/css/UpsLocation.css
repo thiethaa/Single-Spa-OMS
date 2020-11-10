@@ -1,0 +1,52 @@
+.flexBox{ 
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    font-size: 12px;
+}
+.p{
+  text-decoration: none;
+  border:none;
+}
+.p3Style {
+    font-size: 12px;
+    text-align: justify;
+  }
+.flexInput {
+    width: 32%;
+  }
+.footerStyle {
+    text-align: left;
+    padding-top: 10px;
+    height: 20px;
+  }
+.submitBtn {
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 30%;
+  }
+.btnModal {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+.searchBtn{
+    width:50%;
+    height:10%;
+}
+.searchAddress{
+    width:45%;
+    font-size: 16px;
+}
+.imgBottom{
+  width:40px;
+}
+.headerStyle{
+  font-size: 16px;
+  font-weight: bold;
+}
+.upsDetail{
+  font-size: 10px;
+}
